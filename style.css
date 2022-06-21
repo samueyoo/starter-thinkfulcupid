@@ -5,6 +5,10 @@ body {
   color: #6b1a22;
 }
 
+h1 {
+  margin: 0 0;
+}
+
 h2 {
   font-size: 26px;
   font-weight: 400;
@@ -31,15 +35,23 @@ section.alternate-background {
   color: #ecdbc9;
 }
 
-main img {
-  width: 100px;
+img {
+  width: 100%;
 }
+
 
 /* ---  Groups & Items --- */
 
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.group-form {
+  display: flex;
+  justify-content: space-between;
 }
 
 .item {
@@ -51,11 +63,12 @@ main img {
   flex: 2;
 }
 
+
 /* -------  Navigation ------- */
 
 header {
   background-color: #83092e;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 10px 20px;
   text-align: center;
 }
 
@@ -63,6 +76,12 @@ header {
   font-family: "Tangerine", cursive;
   font-size: 72px;
   color: #ecdbc9;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
 }
 
 header nav ul li {
@@ -88,6 +107,7 @@ form {
 
 form label {
   font-weight: bold;
+  margin-right: 8px;
 }
 
 form select,
@@ -118,3 +138,63 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 0;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .imgLove {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 36px;
+    margin: 10px 10px;
+  }
+
+  .item-column {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .desktop-header-stacked {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 0;
+  }
+
+  .desktop-item-single {
+    flex: 1;
+  }
+
+  .desktop-item-double {
+    flex: 2;
+  }
+}
