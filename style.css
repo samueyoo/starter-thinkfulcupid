@@ -63,6 +63,9 @@ img {
   flex: 2;
 }
 
+.headerItem {
+  text-align: center;
+}
 
 /* -------  Navigation ------- */
 
@@ -76,6 +79,8 @@ header {
   font-family: "Tangerine", cursive;
   font-size: 72px;
   color: #ecdbc9;
+  text-align: center;
+  width: 100%;
 }
 
 header nav ul {
