@@ -72,15 +72,12 @@ img {
 header {
   background-color: #83092e;
   padding: 20px 20px 10px 20px;
-  text-align: center;
 }
 
 .logo {
   font-family: "Tangerine", cursive;
   font-size: 72px;
   color: #ecdbc9;
-  text-align: center;
-  width: 100%;
 }
 
 header nav ul {
@@ -201,5 +198,11 @@ footer p {
 
   .desktop-item-double {
     flex: 2;
+  }
+}
+
+@media all and (max-width: 338px) {
+  .logo {
+    font-size: 64px;
   }
 }
